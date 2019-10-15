@@ -34,6 +34,12 @@ app.use(async (ctx, next) => {
   const ms = new Date() - start
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
+
+// const redisClient = require('./db/redis')
+// const sessionStore = new redisStore({
+//   client: redisClient,
+//   db: 1
+// })
 app.keys=['jksa1111']
 app.use(session({
   cookie: {

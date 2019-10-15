@@ -9,7 +9,7 @@ router.get('/sessiontest', async (ctx, next) => {
   if (!ctx.session.contView) {
     ctx.session.contView = 0
   }
-  ctx.session.contView++
+  // ctx.session.contView++
   console.log(ctx.session.contView)
   ctx.body = {
     contView: '222'

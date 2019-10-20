@@ -10,6 +10,7 @@ const index = require('./routes/index')
 const users = require('./routes/users')
 const user = require('./routes/user')
 const blog = require('./routes/blog')
+const examination = require('./routes/examination')
 const session = require('koa-generic-session')
 const redisStore = require('koa-redis')
 // error handler
@@ -56,6 +57,7 @@ app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
 app.use(user.routes(), user.allowedMethods())
 app.use(blog.routes(), blog.allowedMethods())
+app.use(examination.routes(), examination.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

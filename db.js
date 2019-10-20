@@ -9,11 +9,11 @@ if(env==='dev') {
     user: 'root',
     password: 'Jks123456',
     port: '3306',
-    database: 'examination'
+    database: 'myblog'
   }
   redis_conf = {
     port: 6379,
-    host: '127.0.01'
+    host: '127.0.0.1'
   }
 }
 
@@ -23,11 +23,11 @@ if(env==='production') {
     user: 'root',
     password: 'Jks123456',
     port: '3306',
-    database: 'myblog'
+    database: 'test'
   }
   redis_conf = {
     port: 6379,
-    host: '127.0.01'
+    host: '127.0.0.1'
   }
 }
 
